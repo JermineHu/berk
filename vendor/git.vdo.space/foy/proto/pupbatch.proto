@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package proto;
+
+message PupBatchOperationRequest {
+    repeated int64 SockpuppetAccountIDs = 1;
+    bool SockpuppetAccountAll = 2;
+    string SockpuppetAccountPwd = 3;
+    repeated int64 UserAccountIDs = 4;
+    repeated string NewsUUIDs = 5;
+    repeated string Tags = 6;
+}

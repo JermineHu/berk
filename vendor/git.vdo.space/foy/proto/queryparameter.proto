@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package proto;
+
+message QueryParameter {
+    int32 SinceID = 1;
+    int32 MaxID = 2;
+    int32 Page = 3;
+    int32 Count = 4;
+    bool All = 5;
+    string OrderBy = 6;
+}
+
+message PageModel {
+    int64 TotalCount = 1;
+   repeated bytes List = 2;
+}
