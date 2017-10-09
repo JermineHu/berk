@@ -37,7 +37,6 @@
 
         set GOPATH=E:\GO_WORKSPACE
         set CGO_ENABLED=0
-        set GOARCH=386
         set GOARCH=amd64
         set GOOS=linux
         go build -a -installsuffix cgo -o berk
