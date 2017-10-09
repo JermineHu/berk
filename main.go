@@ -24,7 +24,6 @@ func init() {
 }
 
 func main() {
-
 	//now := time.Now()
 	//
 	//dt, _ := time.Parse("2006-01-02", now.Format("2006-01-02"))
