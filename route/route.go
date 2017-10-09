@@ -65,12 +65,12 @@ func (m Mean) Engine() *gin.Engine {
 		{
 			f.WrapWXRoutes(v1)
 			f.WrapFeedbackRoutes(v1)
-			f.WrapLotteryDrawRoutes(v1)
 			v1.Use(f.DomainHandler())
 			f.WrapArticleRoutes(v1)
 			f.WrapTagRoutes(v1)
 			f.WrapFormRoutes(v1)
-			//v1.Use(f.AuthorizationHandler())
+			v1.Use(f.AuthorizationHandler())
+			f.WrapLotteryDrawRoutes(v1)
 			//f.WrapUserRoutes(v1)
 
 		}

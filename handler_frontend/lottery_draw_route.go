@@ -8,7 +8,6 @@ import (
 )
 
 func WrapLotteryDrawRoutes(g *gin.RouterGroup) {
-	g.Use(AuthorizationHandler())
 	LotteryDrawOutdoorHandler(g)
 	//LotteryDrawIndoorHandler(g)
 	//LotteryDraw20170610Handler(g)
